@@ -1,0 +1,31 @@
+package arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class atv3 {
+
+	public static void main(String[] args) {
+		List<Integer> numeros = new ArrayList<>();
+        Scanner ler = new Scanner(System.in);
+        System.out.println("#############################");
+        System.out.println("Digite o valor 0 para parar");
+        System.out.println("#############################");
+        int i = 1;
+        while (i != 0) {
+        System.out.println("Informe os valores:");
+        i = ler.nextInt();
+        if (i != 0) {
+        numeros.add(i);
+           }
+        }
+        System.out.println("Lista é: " + numeros);
+        System.out.println("Números pares são:");
+        for (int n : numeros) {
+            if (n % 2 == 0) {
+                System.out.println(n);
+            }
+        }
+    }
+}
